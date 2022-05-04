@@ -29,6 +29,11 @@
     position: relative;
     backface-visibility: hidden;
 
+    @media only screen and (max-width: $bp-smallest) {
+      flex: 0 0 6.8rem;
+      height: 6.8rem;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -74,6 +79,11 @@
     max-width: 25rem;
     white-space: nowrap;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.85rem;
+      max-width: 48rem;
+    }
   }
 
   &__publisher {
@@ -81,6 +91,10 @@
     color: $color-grey-dark-2;
     text-transform: uppercase;
     font-weight: 600;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.35rem;
+    }
   }
 
   &__user-generated {
