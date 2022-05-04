@@ -1,6 +1,6 @@
 node_modules
 dist
-.cache
+.parcel-cache
 .DS_Store
 .prettierrc
 forkify-architecture-recipe-loading
