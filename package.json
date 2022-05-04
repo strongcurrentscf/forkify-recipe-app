@@ -5,20 +5,18 @@
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --no-minify --out-dir ./dist"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Christian Francis",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.0.0-beta.3.1",
-    "parcel-bundler": "^1.12.5",
+    "@parcel/transformer-sass": "^2.5.0",
     "sass": "^1.37.5"
   },
   "dependencies": {
-    "@parcel/transformer-image": "2.0.0-rc.0",
-    "@parcel/transformer-sass": "^2.0.0-nightly.2420",
     "core-js": "^3.6.5",
     "fracty": "^1.0.9",
+    "parcel": "^2.5.0",
     "regenerator-runtime": "^0.13.7"
   }
 }
