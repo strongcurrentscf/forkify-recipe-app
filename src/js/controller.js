@@ -125,7 +125,7 @@ const controlRecipes = async function () {
 
 /*
 
-The ingredients from the fetched recipe object is an array with each position in the array conytaining an object with the quantity, unit, an description of each ingredient. We will have to loop over this array and create one list element for each of them. 
+The ingredients from the fetched recipe object is an array with each position in the array containing an object with the quantity, unit, an description of each ingredient. We will have to loop over this array and create one list element for each of them. 
 
 */
 
@@ -163,9 +163,9 @@ We can create our own architecture (Mapty project).
 
 We can use well-established architecture pattern like MVC, MVP, Flux, etc. (this project).
 
-In mordern web development, many developers use a framework like React, Angular, Vue, Svelte, etc. to take care of the architecture for them.
+In modern web development, many developers use a framework like React, Angular, Vue, Svelte, etc. to take care of the architecture for them.
 
-No matter where the architechture comes from and who develops it, there are some components that every architecture should have...
+No matter where the architecture comes from and who develops it, there are some components that every architecture should have...
   1) Business Logic - 
     All the code that solves the actual business problem;
     Directly related to what business does and what it needs;
@@ -173,9 +173,9 @@ No matter where the architechture comes from and who develops it, there are some
  
   2) State - 
     One of the most important aspects of any web application.
-    The application state is basically what stores all the data about the application the is running in the browser. The data about the app's front-end.
+    The application state is basically what stores all the data about the application that is running in the browser. The data about the app's front-end.
     The state should store any data that you might fetch from an API, or data the user inputs, or what page the user is currently viewing and so on...
-    And this data should be the 'single source of truth' and should be kept in sync with the user interface. If some data changes in the state, then the user interface should reflect that. And the same is true the other way around. storeing and displaying data and keeping everything in sync is one of the more difficult tasks when building web apps. That's why there are many state management libraries like Redux, or MobX... In this project we will keep things simple and use a single object to keep our state.
+    And this data should be the 'single source of truth' and should be kept in sync with the user interface. If some data changes in the state, then the user interface should reflect that. And the same is true the other way around. storing and displaying data and keeping everything in sync is one of the more difficult tasks when building web apps. That's why there are many state management libraries like Redux, or MobX... In this project we will keep things simple and use a single object to keep our state.
 
   3) HTTP Library -
     Responsible for making and receiving AJAX requests.
@@ -193,13 +193,13 @@ No matter where the architechture comes from and who develops it, there are some
 
 Model-View-Controller Architechture
 
-The View is for the presentation logic. It is the part of the app interacting with the user.
+The View is for the Presentation Logic. It is the part of the app interacting with the user.
 
-The Model is ll about the app's data. That's why it usually contains the State and the Business Logic that manipulates the State. These 2 should be kept closely together.
+The Model is all about the app's data. That's why it usually contains the State and the Business Logic that manipulates the State. These 2 should be kept closely together.
 The Model is also the part of the app that contains the HTTP Library that might get some data from the web(API/back-end). All data into the Model.
 
 The Controller is the part of the app that contains the Application Logic.
-It kind of sits between the model and the view. It basically creates a bridge between the Model nd the View, which in fact should know nothing about eachother... the Model and the View should exist completely independent of one another.
+It kind of sits between the model and the view. It basically creates a bridge between the Model and the View, which in fact should know nothing about eachother... the Model and the View should exist completely independent of one another.
 
 One of the big goals of the MVC pattern is to separate the Business Logic from the Application Logic, which makes developing the app so much easier.
 But as a consequence, we then need something to connect these two parts, the Controller.
