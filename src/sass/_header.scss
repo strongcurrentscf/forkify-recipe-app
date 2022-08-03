@@ -11,6 +11,10 @@
 
   &__home {
     margin-left: 4rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin: 1rem auto 0 auto;
+    }
   }
 
   &__logo {
@@ -22,8 +26,6 @@
     }
     @media only screen and (max-width: $bp-smallest) {
       height: 6.6rem;
-
-      margin: 1rem auto 0 auto;
     }
   }
 }
