@@ -366,6 +366,8 @@ const newFeature = function () {
   console.log('Welcome to the application!');
 };
 
+import previewView from './views/previewView.js';
+
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -374,7 +376,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  resultsView.addScrollHandlerClick(controlScrollIntoView);
+  resultsView.addScrollHandlerClick();
   newFeature(); // just a test add
 };
 init();

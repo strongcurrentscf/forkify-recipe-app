@@ -7,13 +7,15 @@ class ResultsView extends View {
   _errorMessage = 'No recipes found for your query! Please try again ;)';
   _message = '';
 
-  addScrollHandlerClick(handler) {
-    this._parentElement.addEventListener('click', function (e) {
+  addScrollHandlerClick() {
+    this._parentElement.addEventListener('click', function () {
       const link = e.target.closest('.preview__link');
       if (!link) return;
 
       const recipeSection = document.querySelector('.recipe');
-      recipeSection.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        recipeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 250);
     });
   }
 
