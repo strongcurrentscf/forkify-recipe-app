@@ -8,7 +8,7 @@ class ResultsView extends View {
   _message = '';
 
   addScrollHandlerClick() {
-    this._parentElement.addEventListener('click', function () {
+    this._parentElement.addEventListener('click', function (e) {
       const link = e.target.closest('.preview__link');
       if (!link) return;
 
