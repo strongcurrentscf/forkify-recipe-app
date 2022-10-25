@@ -1,6 +1,6 @@
 import { TIMEOUT_SEC } from './config.js';
 
-// Will return a new Promise that will reject after a certain number of seconds. So in order to use this function we will have a race between the timeout promise and the fetch promise trying to get the data from recipe API. Hwatever occurs first will win the race.
+// Will return a new Promise that will reject after a certain number of seconds. So in order to use this function we will have a race between the timeout promise and the fetch promise trying to get the data from recipe API. Whatever occurs first will win the race.
 const timeout = function (s) {
   return new Promise(function (_, reject) {
     setTimeout(function () {

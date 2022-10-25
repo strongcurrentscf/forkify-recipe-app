@@ -360,8 +360,6 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-const controlScrollIntoView = function () {};
-
 const newFeature = function () {
   console.log('Welcome to the application!');
 };

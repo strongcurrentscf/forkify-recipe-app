@@ -15,7 +15,7 @@ class ResultsView extends View {
       const recipeSection = document.querySelector('.recipe');
       setTimeout(() => {
         recipeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 250);
+      }, 500);
     });
   }
 
