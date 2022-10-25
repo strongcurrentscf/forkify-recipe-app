@@ -11,6 +11,18 @@ class BookmarksView extends View {
     window.addEventListener('load', handler);
   }
 
+  addScrollHandlerClick() {
+    this._parentElement.addEventListener('click', function (e) {
+      const link = e.target.closest('.preview__link');
+      if (!link) return;
+
+      const recipeSection = document.querySelector('.recipe');
+      setTimeout(() => {
+        recipeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 500);
+    });
+  }
+
   _generateMarkup() {
     // console.log(this._data);
     return this._data

@@ -375,6 +375,7 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   resultsView.addScrollHandlerClick();
+  bookmarksView.addScrollHandlerClick();
   newFeature(); // just a test add
 };
 init();
