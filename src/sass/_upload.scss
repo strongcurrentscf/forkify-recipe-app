@@ -90,6 +90,9 @@
     & input {
       font-size: 1.5rem;
       padding: 0.8rem 1rem;
+      @media only screen and (max-width: $bp-smallest) {
+        padding: 0.6rem 1rem;
+      }
       border: 1px solid #ddd;
       border-radius: 0.5rem;
       transition: all 0.2s;
@@ -117,6 +120,10 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+    }
     grid-column: 1/-1;
   }
 

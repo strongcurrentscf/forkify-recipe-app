@@ -859,6 +859,11 @@ body {
   border-radius: 0.5rem;
   transition: all 0.2s;
 }
+@media only screen and (max-width: 31.25em) {
+  .upload__column input {
+    padding: 0.6rem 1rem;
+  }
+}
 .upload__column input::-moz-placeholder {
   color: #d3c7c3;
 }
@@ -884,6 +889,12 @@ body {
   text-transform: uppercase;
   margin-bottom: 1rem;
   grid-column: 1/-1;
+}
+@media only screen and (max-width: 31.25em) {
+  .upload__heading {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
 }
 .upload__btn {
   grid-column: 1/-1;
