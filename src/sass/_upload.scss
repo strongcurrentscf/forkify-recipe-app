@@ -14,9 +14,11 @@
 
   @media only screen and (max-width: $bp-smallest) {
     width: 90%;
+    padding: 2.5rem 3rem;
   }
   @media only screen and (max-width: $bp-small) {
     width: 90%;
+    padding: 2.5rem 3rem;
   }
 
   .btn--close-modal {
@@ -25,6 +27,14 @@
     position: absolute;
     top: 0.5rem;
     right: 1.6rem;
+    // @media only screen and (max-width: $bp-smallest) {
+    //   top: 3.5rem;
+    //   right: 1.6rem;
+    // }
+    // @media only screen and (max-width: $bp-small) {
+    //   top: 3.5rem;
+    //   right: 1.6rem;
+    // }
     font-size: 3.5rem;
     cursor: pointer;
     border: none;
@@ -52,13 +62,15 @@
 .upload {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 4rem;
   @media only screen and (max-width: $bp-smallest) {
     grid-template-columns: 1fr;
+    gap: 0rem;
   }
   @media only screen and (max-width: $bp-small) {
     grid-template-columns: 1fr;
+    gap: 0rem;
   }
-  gap: 4rem;
 
   &__column {
     display: grid;
@@ -111,5 +123,6 @@
   &__btn {
     grid-column: 1 / -1;
     justify-self: center;
+    margin-top: 1.25rem;
   }
 }

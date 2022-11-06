@@ -780,11 +780,13 @@ body {
 @media only screen and (max-width: 31.25em) {
   .add-recipe-window {
     width: 90%;
+    padding: 2.5rem 3rem;
   }
 }
 @media only screen and (max-width: 34.0625em) {
   .add-recipe-window {
     width: 90%;
+    padding: 2.5rem 3rem;
   }
 }
 .add-recipe-window .btn--close-modal {
@@ -825,11 +827,13 @@ body {
 @media only screen and (max-width: 31.25em) {
   .upload {
     grid-template-columns: 1fr;
+    gap: 0rem;
   }
 }
 @media only screen and (max-width: 34.0625em) {
   .upload {
     grid-template-columns: 1fr;
+    gap: 0rem;
   }
 }
 .upload__column {
@@ -884,4 +888,5 @@ body {
 .upload__btn {
   grid-column: 1/-1;
   justify-self: center;
+  margin-top: 1.25rem;
 }/*# sourceMappingURL=main.css.map */
