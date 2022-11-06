@@ -93,6 +93,7 @@ class RecipeView extends View {
     });
   }
 
+  // Scroll to .recipe section
   scrollTo() {
     this._parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
