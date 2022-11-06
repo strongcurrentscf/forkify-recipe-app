@@ -112,6 +112,9 @@ const controlRecipes = async function () {
 
     // 3) Rendering recipe
     recipeView.render(model.state.recipe); // This is where we pass in the data to the recipeView object with it's render public-method.
+
+    // 4) Scroll to recipe section
+    recipeView.scrollTo();
   } catch (err) {
     // If there's error, alert the error.
     // console.log(err);
@@ -360,7 +363,7 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-const newFeature = function () {
+const testFeature = function () {
   console.log('Welcome to the application!');
 };
 
@@ -372,8 +375,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  resultsView.addScrollHandlerClick();
-  bookmarksView.addScrollHandlerClick();
-  newFeature(); // just a test add
+  testFeature();
 };
+
 init();

@@ -93,6 +93,10 @@ class RecipeView extends View {
     });
   }
 
+  scrollTo() {
+    this._parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   // Each view will render different HTML so we will have a method that generates that HTML so that the render method can then render that HTML.
   _generateMarkup() {
     // since we're using Babel here, we can already use this syntax method().

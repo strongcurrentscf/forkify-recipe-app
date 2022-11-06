@@ -2,7 +2,7 @@ import View from './View';
 import icons from '../../img/icons.svg'; // To use in markups.
 
 class PreviewView extends View {
-  _parentElement = '';
+  // _parentElement = '';
 
   _generateMarkup() {
     const id = window.location.hash.slice(1);
