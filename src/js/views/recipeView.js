@@ -197,7 +197,7 @@ class RecipeView extends View {
   }
 
   _generationMarkupIngredient(ing) {
-    // This is the specified callback function for the map method used in generating the ingredients list. So, in the map callback, we are asking it to return a string. Map will return an array in which each ing will have this murkup, corresponding to each element in the #data.ingredients.
+    // This is the specified callback function for the map method used in generating the ingredients list. So, in the map callback, we are asking it to return a string. Map will return an array in which each ing will have this markup, corresponding to each element in the #data.ingredients.
 
     return `
   <li class="recipe__ingredient">
