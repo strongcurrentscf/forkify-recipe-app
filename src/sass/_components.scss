@@ -94,6 +94,13 @@
   }
 }
 
+.btn--to {
+  display: inline;
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10rem;
+}
+
 .btn--round {
   background-image: $gradient;
   border-radius: 50%;

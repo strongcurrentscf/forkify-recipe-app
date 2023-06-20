@@ -270,8 +270,8 @@ The solution is that we can subscribe to the publisher by passing in the subscri
 
 As we call init() from controller.js, which calls addHandlerRender() in recipeView.js, we pass in our controlRecipes() function as an argument.
 Essentially we subscribe controlRecipes to addHandlerRender and at this point the 2 functions are finally connected. And so now, addHandlerRender listens for events using the addEventListener method and as soon as the event actually happens, the controlRecipes function will be called as the callback function of addEventListener... As soon as the publisher publishes an event, the subscriber will get called.
-
  */
+
 //////////////////////////////////////////////////
 /////// IMPLEMENTING SEARCH RESULTS - PART 1 ///////
 const controlSearchResults = async function () {

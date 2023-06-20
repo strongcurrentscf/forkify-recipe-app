@@ -1,6 +1,6 @@
 import View from './View';
 import previewView from './previewView.js';
-import icons from '../../img/icons.svg'; // To use in markups.
+// import icons from '../../img/icons.svg'; // To use in markups.
 
 class ResultsView extends View {
   _parentElement = document.querySelector('.results');

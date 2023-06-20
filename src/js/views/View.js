@@ -10,7 +10,7 @@ export default class View {
    * @returns {undefined | string} A markup string is returned if render=false
    * @this {Object} The View instance
    * @author Christian Francis
-   * @todo Make design responsive to screen sizes
+   * @todo Make design responsive to screen sizes, implement auto scroll to recipeView
    */
 
   render(data, render = true) {
@@ -61,7 +61,7 @@ export default class View {
   }
 
   // for the sake of abstracting some code. Clears the .recipe div (parent)
-  _clear() {
+  _clear() { 
     this._parentElement.innerHTML = '';
   }
 
