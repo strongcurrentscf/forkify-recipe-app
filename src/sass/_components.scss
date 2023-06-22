@@ -101,6 +101,16 @@
   border-radius: 10rem;
 }
 
+.btn--to--active {
+  color: #fff;
+  background-color: #f38e82;
+}
+
+.btn--to--active:hover {
+  color: #fff;
+  background-color: #f38e82;
+}
+
 .btn--round {
   background-image: $gradient;
   border-radius: 50%;

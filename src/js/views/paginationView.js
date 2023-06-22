@@ -31,9 +31,9 @@ class PaginationView extends View {
 
       for (let i = 0; i < numPages; i++) {
         markupstring += `
-          <button data-goto="${
-            i + 1
-          }" class="btn--inline btn--to">
+          <button data-goto="${i + 1}" class="btn--inline btn--to ${
+          curPage === (i + 1) ? 'btn--to--active' : ''
+        }">
               <span>${i + 1}</span>
           </button>
         `;
